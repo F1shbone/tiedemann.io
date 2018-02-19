@@ -1,0 +1,23 @@
+$dimensions: (
+  xsmall: 'xs',
+  small:  'sm',
+  medium: 'md',
+  large:  'lg'
+);
+
+$breakpoints: (
+  xsmall: 0em,
+  small:  48em,
+  medium: 64em,
+  large:  75em
+);
+
+$containers: (
+  xsmall: 100%,
+  small:  49rem,
+  medium: 65rem,
+  large:  76rem
+  // small:  784px,
+  // medium: 1040px,
+  // large:  1216px
+);
