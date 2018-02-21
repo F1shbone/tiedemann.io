@@ -44,7 +44,7 @@ export default {
       display: inline-block;
       font-size: 2.4rem;
 
-      &.full { color: #fde16d; }
+      &.full { color: #f1c40f; }
       &.empty { color: #ddd; }
     } 
   }
