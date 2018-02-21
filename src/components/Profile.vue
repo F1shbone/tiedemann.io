@@ -6,30 +6,36 @@
       <hr />
 
       <div class="row">
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-6 col-xl-6">
           <h4>About me</h4>
+          <p>
+            I love structure and order and I also stand for quality.
+            I love spending time on fixing little details and optimizing web apps.
+            Also I like working in a team, you'll learn faster and much more.
+            As the saying goes: 'two heads are better than one'.
+          </p>
           <p>Eiusmod voluptate sint eu sit magna quis cupidatat magna. Officia in et aliqua officia labore irure commodo. Dolore eu cupidatat amet amet nulla amet. Aliqua non dolore ipsum est nulla aliquip qui ullamco amet laborum deserunt nostrud nisi tempor. Sunt in sit proident officia consectetur adipisicing. Tempor veniam nulla dolore velit cillum deserunt magna ut excepteur irure eu consequat magna.</p> 
         </div>
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-12 col-md-6 col-xl-6">
+          <div class="details">
+            <h4>Details</h4>
+            <dl class="row">
+              <dt class="col-xs-12 col-sm-3">Name:</dt>
+              <dd class="col-xs-12 col-sm-9">Christian Tiedemann</dd>
+
+              <dt class="col-xs-12 col-sm-3">Age:</dt>
+              <dd class="col-xs-12 col-sm-9">{{ age }} years</dd>
+
+              <dt class="col-xs-12 col-sm-3">Location:</dt>
+              <dd class="col-xs-12 col-sm-9">Türkenfeld, Munich, Germany</dd>
+
+              <dt class="col-xs-12 col-sm-3">Phone:</dt>
+              <dd class="col-xs-12 col-sm-9"><a href="tel:+4915150460533">+49 151 50460533</a></dd>
+            </dl>
+          </div>
           <div class="imageContainer">
             <img src="../assets/image.jpg" />
           </div>
-        </div>
-        <div class="col-sm-6 col-md-4 details">
-          <h4>Details</h4>
-          <dl>
-            <dt>Name:</dt>
-            <dd>Christian Tiedemann</dd>
-
-            <dt>Age:</dt>
-            <dd>{{ age }} years</dd>
-
-            <dt>Location:</dt>
-            <dd>Türkenfeld, Munich, Germany</dd>
-
-            <dt>Phone:</dt>
-            <dd><a href="tel:+4915150460533">+49 151 50460533</a></dd>
-          </dl>
         </div>
       </div>
     </div>
@@ -55,18 +61,6 @@ export default {
 @import '../scss/base/variables';
 
 .profile {
-  .header {
-    color: $primary-color;
-    text-align: center;
-    letter-spacing: .5rem;
-    font-size: 5.4rem;
-  }
-  .subheader {
-    font-size: 2.1rem;
-    font-weight: 200;
-    // color: $;
-    text-align: center;
-  }
 
   .imageContainer {
     padding: 1rem;
@@ -82,12 +76,7 @@ export default {
   }
 
   .details {
-    text-align: right;
-
-    dl > dt { 
-      margin-top: .5rem;
-      font-weight: 700;
-    }
+    dl > dt { font-weight: 700; }
     dl > dd { margin: 0; }
   }
 }

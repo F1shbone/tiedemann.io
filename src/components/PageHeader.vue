@@ -1,5 +1,5 @@
 <template>
-  <section class="page-header" :class="headerClass">
+  <section class="page-header">
     <img
       src="../assets/background.png"
       srcset="
