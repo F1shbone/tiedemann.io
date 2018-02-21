@@ -1,2 +1,26 @@
 $primary-color: #3498db;
 $secondary-color: #222;
+
+$dimensions: (
+  xsmall: 'xs',
+  small:  'sm',
+  medium: 'md',
+  large:  'lg',
+  xlarge: 'xl'
+);
+
+$breakpoints: (
+  xsmall: 0rem,
+  small:  48rem,
+  medium: 64rem,
+  large:  75rem,
+  xlarge: 999px,
+);
+
+$containers: (
+  xsmall: 100%,
+  small:  49rem,
+  medium: 65rem,
+  large:  76rem,
+  xlarge: 100rem,
+);

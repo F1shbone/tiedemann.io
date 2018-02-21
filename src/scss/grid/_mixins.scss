@@ -10,8 +10,8 @@
   @media only screen and (min-width: map-get($breakpoints, $key)) {
     [class^="col-#{$dimension}"] {
       flex: 0 0 auto;
-      padding-left: .5rem;
-      padding-right: .5rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     .col-#{$dimension} {
