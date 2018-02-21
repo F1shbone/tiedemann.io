@@ -5,6 +5,8 @@
       <profile />
       <experiences />
       <abilities />
+      <projects />
+      <contact />
     </main>
   </div>
 </template>
@@ -14,6 +16,8 @@ import PageHeader from './components/PageHeader'
 import Profile from './components/Profile'
 import Experiences from './components/Experiences'
 import Abilities from './components/Abilities'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 export default {
   name: 'App',
@@ -21,7 +25,9 @@ export default {
     PageHeader,
     Profile,
     Experiences,
-    Abilities
+    Abilities,
+    Projects,
+    Contact
   }
 }
 </script>
@@ -39,6 +45,14 @@ a { text-decoration: none; }
      background-color: $light-grey;
 
      hr { border-color: darken($light-grey, 25%); }
+   }
+
+   &:last-child {
+     background-color: $dark-grey;
+
+     hr { border-color: $font-color }
+
+     .header { color: #fff; }
    }
 
   .header {
