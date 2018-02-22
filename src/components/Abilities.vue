@@ -81,7 +81,8 @@ export default {
         'Vue': 5,
         'Angular': 3,
         'Electron': 4,
-        'Scrum': 2
+        'Scrum': 2,
+        'D3.js': 4
       },
       languages: {
         'German (Mother tongue': 5,
@@ -97,8 +98,9 @@ export default {
         // 'MS Office (10+ years)': 5,
         'Notepad++ (5 years)': 5,
         'Visual Studio Code (2 years)': 5,
-        'Webpack': 4,
-        'Gulp': 5
+        'Webpack (2 years)': 4,
+        'Gulp / Grunt (4 years)': 5,
+        'Atlassian / Jira (3 years)': 3
       }
     }
   },

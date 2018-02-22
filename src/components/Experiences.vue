@@ -13,132 +13,95 @@
 
       <section>
         <h4>Careers</h4>
-        <div class="row experience">
-          <div class="col-sm-12 col-md-4">
-            <strong>Sabbatical</strong>
-            Jun 2017 - current
-          </div>
-          <div class="col-sm-12 col-md-8">
-            <p>
-              <strong>
-                Title
-              </strong>
-            </p>
-            <p>Text</p>
-          </div>
-        </div>
-        <div class="row experience">
-          <div class="col-sm-12 col-md-4">
-            <strong>Vocatus AG</strong>
-            Jun 2015 - Jun 2017
-          </div>
-          <div class="col-sm-12 col-md-8">
-            <p>
-              <strong>
-                Web- and Applicationdeveloper
-                <span class="label">Fulltime</span> 
-              </strong>
-            <p>
-            <p>
-              TODO: Change text and get Icons
-              <ul class="list-unstyled">
-                <li>Planung und Implementierung des Webfrontends sowie der dazugehörigen RESTful-API, für die interne Zeiterfassung</li>
-                <li>Entwicklung und Wartung der Firmenwebseite, unter Zuhilfenahme von Joomla</li>
-                <li>Entwicklung diverser WPA-Applikationen</li>
-                <li>Anleiten der Auszubildenden</li>
-              </ul>
-            </p>
-            <div class="links">
-              <span class="location">
-                <i class="ion ion-location" /> Gröbenzell, München
-              </span>
-              <a href="https://www.vocatus.de" target="_blank">
-                <i class="ion ion-link" />https://vocatus.de
-              </a>
-            </div>
-          </div>
-        </div>
+        <entry 
+          v-for="(entry, index) in careers" :key="index"
+          :data="entry"
+        />
 
         <h4>Education</h4>
-        <div class="row experience">
-          <div class="col-sm-12 col-md-4">
-            <strong>Vocatus AG</strong>
-            Sep 2012 - Jun 2015 
-          </div>
-          <div class="col-sm-12 col-md-8">
-            <p>
-              <strong>
-                Apprenticeship - "Fachinformatiker Anwendungsentwicklung"
-                <span class="label">Fulltime</span> 
-              </strong>
-            <p>
-            <p>
-              TODO: Change text and get Icons
-              
-            </p>
-            <div class="links">
-              <span class="location">
-                <i class="ion ion-location" /> Gröbenzell, München
-              </span>
-              <a href="https://www.vocatus.de" target="_blank">
-                <i class="ion ion-link" /> https://vocatus.de
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row experience">
-          <div class="col-sm-12 col-md-4">
-            <strong>FH Kempten</strong>
-            Oct 2010 - Sep 2012 
-          </div>
-          <div class="col-sm-12 col-md-8">
-            <p>
-              <strong>
-                Bachelor - "Wirtschaftsinformatik"
-                <span class="label">4 Semester</span> 
-              </strong>
-            <p>
-            <p>
-              TODO: Change text and get Icons
-              
-            </p>
-            <div class="links">
-              <span class="location">
-                <i class="ion ion-location" /> Kempten
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="row experience">
-          <div class="col-sm-12 col-md-4">
-            <strong>Staatliche Fachoberschule Fürstenfeldbruck</strong>
-            Sep 2008 - Jul 2010 
-          </div>
-          <div class="col-sm-12 col-md-8">
-            <p>
-              <strong>
-                Fachhochschulreife
-              </strong>
-            <p>
-            <p>
-              TODO: Change text and get Icons
-              
-            </p>
-            <div class="links">
-              <span class="location">
-                <i class="ion ion-location" /> Fürstenfeldbruck
-              </span>
-            </div>
-          </div>
-        </div>
+        <entry 
+          v-for="(entry, index) in education" :key="index"
+          :data="entry"
+        />
       </section>
     </div>
   </section>
 </template>
 
 <script>
+import Entry from './Experiences/Entry'
+
 export default {
-  name: 'Experiences'
+  name: 'Experiences',
+  components: {
+    Entry
+  },
+  data () {
+    return {
+      careers: [
+        {
+          duration: 'Jun 2017 - current',
+          title: 'Personal Leave of Absence'
+        },
+        {
+          company: 'Vocatus AG',
+          duration: 'Jun 2015 - Jun 2017',
+          title: 'Web- and Applicationsdeveloper',
+          label: 'Fulltime',
+          description: `
+            After my apprenticeship I stayed with Vocatus and worked on projects like their internal project dashboard,
+            online data analysis tools and more. Using frameworks and technologies such as Vue.js, Laravel, D3.js and node.js.
+            I also introduced working with automated buildtoolsand supported the next generation of trainees.
+          `,
+          location: 'Gröbenzell, München',
+          link: {
+            target: 'https://www.vocatus.de',
+            text: 'https://vocatus.de'
+          }
+        }
+      ],
+      education: [
+        {
+          company: 'Vocatus AG',
+          duration: 'Sep 2012 - Jun 2015',
+          title: 'Apprenticeship - "Fachinformatiker Anwendungsentwicklung"',
+          label: 'Fulltime',
+          description: `
+            I started my apprenticeship at a company called Vocatus, a consulting firm based in Gröbenzell. There I learned to apply and
+            combine my theoretical knowledge and love for programming.
+            <br>
+            During the redesign of both the company website and online survey, I realized that webdevelopment was the way to go for me. 
+          `,
+          location: 'Gröbenzell, München',
+          link: {
+            target: 'https://www.vocatus.de',
+            text: 'https://vocatus.de'
+          }
+        },
+        {
+          company: 'FH-Kempten',
+          duration: 'Oct 2010 - Sep 2012',
+          title: 'Bachelor - "Wirtschaftsinformatik"',
+          label: '4 Semester',
+          description: `
+            The education was mainly Java-based programming, but I also lerned about SQL, MVC, UML and more. It also taught me 
+            thing or two about design patterns, software design and the importance of OOP. While educational it sadly lacked practical use, 
+            so after my 4th semester I decided to start an apprenticeship.
+          `,
+          location: 'Kempten'
+        },
+        {
+          company: 'Fachoberschule Fürstenfeldbruck',
+          duration: 'Sep 2008 - Jul 2010',
+          title: 'Fachhochschulreife - Wirtschaft',
+          description: `
+            I graduated from FOS, and realized that my professional future should consist more of computer science and less of economics.
+          `,
+          location: 'Fürstenfeldbruck'
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -148,43 +111,5 @@ export default {
 
 .experiences {
   .subheader > blockquote { margin: 0; }
-
-
-  .experience {
-    margin-bottom: 2.5rem;
-
-    strong { display: block; }
-
-    .label {
-      padding: .25rem .5rem;
-      float: right;
-      border: 1px solid darken($light-grey, 25%);
-      border-radius: .25rem;
-      font-size: 85%;
-      font-weight: 100;
-      text-transform: uppercase;
-      user-select: none;
-    }
-
-    .ion {
-      font-size: 150%;
-      margin-right: 1rem;
-    }
-
-    .links {
-      > * {
-        display: flex;
-        padding: 0 1rem;
-        color: $link-color;
-        float: left;
-        &:first-child { padding-left: 0; }
-        &:last-child { padding-right: 0; }
-        + * {
-          padding-left: 1rem;
-          border-left: 1px solid darken($light-grey, 25%);
-        }
-      }
-    }
-  }
 }
 </style>
