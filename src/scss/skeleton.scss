@@ -27,3 +27,7 @@
 @import 'modules/tables';
 @import 'modules/spacing';
 @import 'modules/media-queries';
+
+// Ionicons
+$ionicons-font-path: "~ionicons/fonts";
+@import '~ionicons/scss/ionicons';

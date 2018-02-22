@@ -3,6 +3,10 @@ var webpack = require('webpack')
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   entry: {
     main: './src/main.js',
@@ -21,7 +25,8 @@ module.exports = {
         test: /\.css$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'resolve-url-loader'
         ]
       },
       {
@@ -29,6 +34,7 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader',
+          'resolve-url-loader',
           'sass-loader'
         ]
       },
@@ -37,6 +43,7 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader',
+          'resolve-url-loader',
           'sass-loader?indentedSyntax'
         ]
       },
@@ -58,11 +65,13 @@ module.exports = {
             'scss': [
               'vue-style-loader',
               'css-loader',
-              'sass-loader'
+              'resolve-url-loader',
+              'sass-loader',
             ],
             'sass': [
               'vue-style-loader',
               'css-loader',
+              'resolve-url-loader',
               'sass-loader?indentedSyntax'
             ]
           }
@@ -80,12 +89,22 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'fonts/[name].[ext]?[hash]'
+        }
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+      '~$': resolve('node_modules')
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
