@@ -12,13 +12,13 @@
       <hr />
 
       <div class="showcase row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           <img
             class="showcase-image"
             src="../assets/projects/vocatus_website.png"
           />
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-xs-12 col-sm-12 col-md-6">
           <h4 class="showcase-title">Vocatus Website Redesign</h4>
 
           <ul class="showcase-tags">
@@ -31,7 +31,7 @@
       </div>
       <hr />
       <div class="showcase row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-xs-12 col-sm-12 col-md-6 order-2 order-md-1">
           <h4 class="showcase-title">My Website</h4>
 
           <ul class="showcase-tags">
@@ -41,14 +41,13 @@
             <li class="showcase-tag">Vue.js</li>
           </ul>
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-sm-12 col-md-6 order-1 order-md-2">
           <img
             class="showcase-image"
             src="../assets/projects/my_website.png"
           />
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -73,10 +72,6 @@ export default {
       text-align: center;
     }
     .showcase-tags {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
       margin-bottom: .6rem;
       text-align: center;
 
@@ -94,6 +89,15 @@ export default {
         + .showcase-tag {
           margin-left: .5rem;
         }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .showcase-tags {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
       }
     }
   }

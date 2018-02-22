@@ -8,7 +8,7 @@
       <p>
         <strong>
           {{data.title}}
-          <span class="label" v-if="data.label" v-text="data.label" />
+          <span class="label d-md-block" v-if="data.label" v-text="data.label" />
         </strong>
       </p>
       <p v-if="data.description" v-html="data.description" />
@@ -53,6 +53,7 @@ export default {
   strong { display: block; }
 
   .label {
+    display: none;
     padding: .25rem .5rem;
     float: right;
     border: 1px solid darken($light-grey, 25%);
@@ -64,6 +65,7 @@ export default {
   }
 
   .ion {
+    width: 2rem;
     font-size: 150%;
     margin-right: 1rem;
   }
@@ -79,6 +81,22 @@ export default {
       + * {
         padding-left: 1rem;
         border-left: 1px solid darken($light-grey, 25%);
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .links {
+      display: flex;
+      flex-direction: column;
+      > * {
+        display: flex;
+        flex-direction: row;
+
+        + * {
+          padding-left: 0;
+          border: 0 none;
+        }
       }
     }
   }
