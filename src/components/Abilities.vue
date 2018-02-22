@@ -100,7 +100,8 @@ export default {
         'Visual Studio Code (2 years)': 5,
         'Webpack (2 years)': 4,
         'Gulp / Grunt (4 years)': 5,
-        'Atlassian / Jira (3 years)': 3
+        'Atlassian / Jira (3 years)': 3,
+        'Joomla': 3
       }
     }
   },
