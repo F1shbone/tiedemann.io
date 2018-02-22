@@ -38,6 +38,7 @@ export default {
 @import './scss/base/variables';
 
 a { text-decoration: none; }
+
 #content > section {
    padding: 2rem 0;
 

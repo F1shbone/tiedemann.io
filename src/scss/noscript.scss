@@ -3,8 +3,7 @@
 @import 'base/variables';
 @import 'base/base-styles';
 
-@import 'grid/breakpoints';
-@import 'grid/mixins';
+@import 'grid/bootstrap-grid';
 
 body {
   display: flex;
@@ -13,15 +12,7 @@ body {
   min-height: 100vh;
 }
 
-.container,
-.container-fluid {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-@each $key, $dimension in $dimensions {
-  @include container-generator($key);
-}
+.container { text-align: center; }
 
 $icon-width: 150px;
 
@@ -35,6 +26,7 @@ $icon-width: 150px;
   border-radius: 50%;
   color: #e74c3c;
   background-color: #e74c3c;
+  text-align: center;
 
   &::before {
     content: '';
