@@ -4,9 +4,9 @@
       <h1 class="header">Experiences</h1>
       <span class="subheader">
         <blockquote>
-          "Lorem Ipsum dolor sit amet..."
+          "I have never let my schooling interfere with my education"
           <br>
-          &mdash; Author, [Book]
+          &mdash; Mark Twain
         </blockquote>
       </span>
       <hr />

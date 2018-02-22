@@ -28,9 +28,6 @@
 
               <dt class="col-xs-12 col-sm-3">Location:</dt>
               <dd class="col-xs-12 col-sm-9">Türkenfeld, Munich, Germany</dd>
-
-              <dt class="col-xs-12 col-sm-3">Phone:</dt>
-              <dd class="col-xs-12 col-sm-9"><a href="tel:+4915150460533">+49 151 50460533</a></dd>
             </dl>
           </div>
           <div class="imageContainer">

@@ -4,11 +4,20 @@
       <h1 class="header">Contact</h1>
       <span class="subheader">
         <blockquote>
-          "Lorem Ipsum dolor sit amet..."
+          "If I had asked people what they wanted, they would have said faster horses."
           <br>
-          &mdash; Author, [Book]
+          &mdash; Henry Ford
         </blockquote>
       </span>
+      <hr />
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+
+        </div>
+        <div class="col-xs-12 col-md-6">
+
+        </div>
+      </div>
       <hr />
 
     </div>
@@ -22,5 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.contact {
+  padding-bottom: 12rem !important;
+}
 </style>

@@ -4,9 +4,9 @@
       <h1 class="header">Abilities</h1>
       <span class="subheader">
         <blockquote>
-          "Lorem Ipsum dolor sit amet..."
+          "Any fool can know. The point is to understand"
           <br>
-          &mdash; Author, [Book]
+          &mdash; Albert Einstein
         </blockquote>
       </span>
       <hr />
@@ -81,14 +81,24 @@ export default {
         'Vue': 5,
         'Angular': 3,
         'Electron': 4,
-        'Scrum': 3
+        'Scrum': 2
       },
       languages: {
         'German (Mother tongue': 5,
         'English (Daily use)': 5
       },
       tools: {
-        'Windows (10+ years)': 5
+        'Windows (10+ years)': 5,
+        'Mac (5 years)': 5,
+        'Firefox (5 years)': 5,
+        'Webkit browsers (5 years)': 5,
+        'Internet Explorer 10+ (5 years)': 4,
+        'Git / Git Flow (4 years)': 4,
+        // 'MS Office (10+ years)': 5,
+        'Notepad++ (5 years)': 5,
+        'Visual Studio Code (2 years)': 5,
+        'Webpack': 4,
+        'Gulp': 5
       }
     }
   },

@@ -31,9 +31,20 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../../scss/overrides/variables';
+@import '../../scss/base/variables';
+
 .abilities .entry {
   display: flex;
   align-items: center;
+  cursor: default;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #f2f2f2;
+
+    .star-icon { padding-right: .25rem; }
+  }
   .entry-name {
     flex-grow: 1;
   }
@@ -43,6 +54,8 @@ export default {
       position: relative;
       display: inline-block;
       font-size: 2.4rem;
+      cursor: default;
+      transition: padding .3s;
 
       &.full { color: #f1c40f; }
       &.empty { color: #ddd; }
