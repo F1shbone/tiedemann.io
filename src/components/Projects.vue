@@ -4,9 +4,9 @@
       <h1 class="header">Projects</h1>
       <span class="subheader">
         <blockquote>
-          "Lorem Ipsum dolor sit amet..."
+          "The only way to do great work is to love what you do"
           <br>
-          &mdash; Author, [Book]
+          &mdash; Steve Jobs
         </blockquote>
       </span>
       <hr />
