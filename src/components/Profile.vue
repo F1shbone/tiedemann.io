@@ -6,6 +6,13 @@
       <hr />
 
       <div class="row">
+        <div class="col-sm-12">
+          <div class="imageContainer">
+            <img src="../assets/image.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-sm-12 col-md-6 col-xl-6">
           <h4>About me</h4>
           <p>
@@ -14,7 +21,7 @@
             Also I like working in a team, you'll learn faster and much more.
             As the saying goes: 'two heads are better than one'.
           </p>
-          <p>Eiusmod voluptate sint eu sit magna quis cupidatat magna. Officia in et aliqua officia labore irure commodo. Dolore eu cupidatat amet amet nulla amet. Aliqua non dolore ipsum est nulla aliquip qui ullamco amet laborum deserunt nostrud nisi tempor. Sunt in sit proident officia consectetur adipisicing. Tempor veniam nulla dolore velit cillum deserunt magna ut excepteur irure eu consequat magna.</p> 
+          <!-- <p>Eiusmod voluptate sint eu sit magna quis cupidatat magna. Officia in et aliqua officia labore irure commodo. Dolore eu cupidatat amet amet nulla amet. Aliqua non dolore ipsum est nulla aliquip qui ullamco amet laborum deserunt nostrud nisi tempor. Sunt in sit proident officia consectetur adipisicing. Tempor veniam nulla dolore velit cillum deserunt magna ut excepteur irure eu consequat magna.</p>  -->
         </div>
         <div class="col-sm-12 col-md-6 col-xl-6">
           <div class="details">
@@ -29,9 +36,6 @@
               <dt class="col-xs-12 col-sm-3">Location:</dt>
               <dd class="col-xs-12 col-sm-9">Türkenfeld, Munich, Germany</dd>
             </dl>
-          </div>
-          <div class="imageContainer">
-            <img src="../assets/image.jpg" />
           </div>
         </div>
       </div>

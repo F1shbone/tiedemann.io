@@ -72,13 +72,13 @@ export default {
       text-align: center;
     }
     .showcase-tags {
-      margin-bottom: .6rem;
       text-align: center;
+      margin-bottom: 0;
 
       .showcase-tag {
         display: inline-block;
         padding: .25rem .5rem;
-        margin-bottom: 0;
+        margin-bottom: .6rem;
         border: 1px solid #a1a1a1;
         border-radius: .25rem;
         font-size: 85%;
