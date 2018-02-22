@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 function resolve (dir) {
   return path.join(__dirname, dir)
@@ -66,7 +67,7 @@ module.exports = {
               'vue-style-loader',
               'css-loader',
               'resolve-url-loader',
-              'sass-loader',
+              'sass-loader'
             ],
             'sass': [
               'vue-style-loader',
@@ -120,6 +121,12 @@ module.exports = {
     new ExtractTextPlugin({
       filename: './css/reboot.css',
       allChunks: true
+    }),
+    new ImageminPlugin({
+      disable: process.env.NODE_ENV !== 'production', // Disable during development
+      pngquant: {
+        quality: '95-100'
+      }
     })
   ],
   devtool: '#eval-source-map'
