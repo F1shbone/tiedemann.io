@@ -110,14 +110,13 @@ export default {
       let result = [[], []]
 
       let keys = Object.keys(input)
-      let values = Object.values(input)
       let chunker = Math.ceil(keys.length / 2) - 1
       let data = []
       
       keys.forEach((key, index) => {
         data.push({
           name: key,
-          value: values[index]
+          value: input[key]
         })
       })
 

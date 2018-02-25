@@ -9,7 +9,7 @@
       "
       alt="Page Header Background"
     >
-      <div class="header-content">
+      <div class="header-content container">
         <h1 class="head">Christian Tiedemann</h1>
         <p class="subhead">Mein Leben und ich</p>
       </div>

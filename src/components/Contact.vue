@@ -54,6 +54,7 @@ export default {
 
   .contact-entry {
     display: flex;
+    margin-bottom: .5rem;
     opacity: .6;
     color: #fff;
     align-items: center;
