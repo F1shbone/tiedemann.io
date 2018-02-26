@@ -1,0 +1,20 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "parse": "node ./app/mjml.js",
+    "mjml": "mjml ./template/Anschreiben.mjml",
+    "start": "electron ."
+  },
+  "author": "F1shbone <DJ_Side@t-online.de>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^1.8.2"
+  },
+  "dependencies": {
+    "mjml": "^3.3.5"
+  }
+}
