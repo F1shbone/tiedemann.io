@@ -13,13 +13,13 @@
 
       <section>
         <h4>Careers</h4>
-        <entry 
+        <entry
           v-for="(entry, index) in careers" :key="index"
           :data="entry"
         />
 
         <h4>Education</h4>
-        <entry 
+        <entry
           v-for="(entry, index) in education" :key="index"
           :data="entry"
         />
@@ -40,7 +40,22 @@ export default {
     return {
       careers: [
         {
-          duration: 'Jun 2017 - current',
+          company: 'financial.com',
+          duration: 'March 2018 - current',
+          title: 'Frontend Developer',
+          label: 'Fulltime',
+          description: `
+            financial.com is a leading provider of financial information and trading systems. Here work on our new application framework,
+            written completely in typescript. As a team we are working in a fully scrum way.
+          `,
+          location: 'Schwabing, München',
+          link: {
+            target: 'https://www.financial.com',
+            text: 'https://financial.com'
+          }
+        },
+        {
+          duration: 'Jun 2017 - March 2018',
           title: 'Personal Leave of Absence'
         },
         {
@@ -51,7 +66,7 @@ export default {
           description: `
             After my apprenticeship I stayed with Vocatus and worked on projects like their internal project dashboard,
             online data analysis tools and more. Using frameworks and technologies such as Vue.js, Laravel, D3.js and node.js.
-            I also introduced working with automated buildtoolsand supported the next generation of trainees.
+            I also introduced working with automated buildtools and supported the next generation of trainees.
           `,
           location: 'Gröbenzell, München',
           link: {
@@ -70,7 +85,7 @@ export default {
             I started my apprenticeship at a company called Vocatus, a consulting firm based in Gröbenzell. There I learned to apply and
             combine my theoretical knowledge and love for programming.
             <br>
-            During the redesign of both the company website and online survey, I realized that webdevelopment was the way to go for me. 
+            During the redesign of both the company website and online survey, I realized that webdevelopment was the way to go for me.
           `,
           location: 'Gröbenzell, München',
           link: {
@@ -84,8 +99,8 @@ export default {
           title: 'Bachelor - "Wirtschaftsinformatik"',
           label: '4 Semester',
           description: `
-            The education was mainly Java-based programming, but I also lerned about SQL, MVC, UML and more. It also taught me 
-            thing or two about design patterns, software design and the importance of OOP. While educational it sadly lacked practical use, 
+            The education was mainly Java-based programming, but I also lerned about SQL, MVC, UML and more. It also taught me a
+            thing or two about design patterns, software design and the importance of OOP. While educational it sadly lacked practical use,
             so after my 4th semester I decided to start an apprenticeship.
           `,
           location: 'Kempten'

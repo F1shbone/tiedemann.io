@@ -23,7 +23,7 @@
           </template>
         </div>
       </div>
-      
+
       <h4>Languages</h4>
       <div class="row">
         <div
@@ -36,7 +36,7 @@
           </template>
         </div>
       </div>
-      
+
       <h4>Tools</h4>
       <div class="row">
         <div
@@ -81,7 +81,7 @@ export default {
         'Vue': 5,
         'Angular': 3,
         'Electron': 4,
-        'Scrum': 2,
+        'Scrum': 4,
         'D3.js': 4
       },
       languages: {
@@ -112,7 +112,7 @@ export default {
       let keys = Object.keys(input)
       let chunker = Math.ceil(keys.length / 2) - 1
       let data = []
-      
+
       keys.forEach((key, index) => {
         data.push({
           name: key,
