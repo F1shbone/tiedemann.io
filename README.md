@@ -1,20 +1,22 @@
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# tiedemann.io
 
-# website
-
-> My online CV
+> My personal website
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+$ npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-# build for production with minification
-npm run build
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
